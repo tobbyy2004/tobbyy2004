@@ -1,0 +1,153 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation bar */
+header {
+    background-color: #333;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* Hero section */
+.hero {
+    background-color: #fff;
+    padding: 3em 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.hero .highlight {
+    color: #ff6347;
+}
+
+.hero .intro {
+    font-size: 1.5em;
+    color: #777;
+    margin-bottom: 1.5em;
+}
+
+.hero .btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 0.75em 2em;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hero .btn:hover {
+    background-color: #ff4500;
+}
+
+/* About section */
+.about {
+    padding: 2em 0;
+    text-align: center;
+}
+
+/* Projects section */
+.projects {
+    padding: 3em 0;
+    text-align: center;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.project-card p {
+    font-size: 1.1em;
+    color: #777;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 1em;
+    color: #ff6347;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero .intro {
+        font-size: 1.2em;
+    }
+}
